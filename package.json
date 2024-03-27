@@ -1,6 +1,6 @@
 {
   "name": "nova-businessloans-mk",
-  "description": "Marko TodoMVC example",
+  "description": "",
   "version": "1.0.0",
   "dependencies": {
     "marko": "5"
