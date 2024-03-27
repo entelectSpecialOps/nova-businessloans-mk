@@ -1,0 +1,26 @@
+import todoApp from "../../pages/app.js";
+class {
+  handleFormSubmit(event) {
+    const titleInput = this.getEl("new-todo");
+    const todoTitle = titleInput.value;
+
+    todoApp.addNewTodo({
+      title: todoTitle,
+    });
+
+    titleInput.value = "";
+    event.preventDefault();
+  }
+}
+style {
+  .header form {
+    margin: 0;
+  }
+}
+
+<header class="header">
+  <h1>Loan Tickets</h1>
+  <form on-submit("handleFormSubmit")>
+    <input key="new-todo" placeholder="What needs to be done?" class="new-todo">
+  </form>
+</header>
